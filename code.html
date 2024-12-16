@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Metro Boomin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="METRO">
+    <h1>
+        <u>
+        Metro Boomin
+        </u>
+    </h1>
+    </header>
+    
+    <section class="subheading">
+    <h2>
+        The greatest producer?
+    </h2>
+    </section>
+
+    <section class="pic">
+        <a href="https://www.redbull.com/gb-en/metro-boomin-red-bull-symphonic"> 
+        <img src="metro_pic.jpg" alt="Metro Boomin in a composer outfit, at the Red Bull Orchestra"> 
+        </a>
+    </section>
+
+    <section class="Introduction">
+        <h2>
+        Metro Boomin, aka Leland Tyler Wayne, is an American record producer and songwriter.<br>
+        He is regarded as one of the most influential hip hop and trap music producers. <br>
+        He frequently collaborates with Future, 21 Savage, Don Toliver, Travis Scott, The Weeknd, Young Thug and etc.
+    </h2>
+    </section>
+
+    <section class="heading">
+        <h1>
+            <u>
+                His beats
+            </u>
+        </h1>
+    </section>
+
+    <section class="his_beats">
+        <h2>
+            Metro is famous for many beats, such as Too Many Nights, Annihilate, Niagra Falls and of course, Like That as well as Type Sh*t <br>
+            Here is the beat for Like That, did you know that this song <i>ignited</i> the diss battle between Drake and Kendrick Lamar?
+        </h2>
+    </section>
+
+    <button class="play-button like-that">Like That</button>
+        <audio class="music" src="future,-metro-boomin,-kendrick-lamar-like-that-instrumental-made-with-Voicemod.mp3"></audio>
+
+    <section class="Others">
+        <h1>
+            <u>
+                Other Producers?
+            </u>
+        </h1>
+        </section>
+
+        <section class="info">
+            <h2>
+            There are many other famous producers, such as Pi'erre Bourne, who is best known for his work with Playboi Carti.<br>
+            Mustard is also a well-known producer, with his producer tag known everywhere! <br>
+            There is also Tay Keith, Wheezy, Pharrell Williams and Quincy Jones - who sadly passed away this year. 
+        </h2>
+        </section>
+
+        <section class="Tags">
+            <h1>
+                <u>
+                    Producer tags
+                </u>
+            </h1>
+            </section>
+
+            <section class="producer_tags">
+                <h2>
+                    Producer tags are almost like a "catchphrase" for music producers. <br>
+                    It's unique to them, and allows for people to recognise them. <br>
+                    Click on the buttons to here the producer's tag, mind the expletives in Wheezy and Mustard!
+                </h2>
+            </section>
+
+            <button class="play-button aa">Metro Boomin</button>
+        <audio class="music" src="vocal-tag-metro-yell.wav"></audio>
+
+             <button class="play-button aa">Mustard</button>
+        <audio class="music" src="dj-mustard's-producer-tag-made-with-Voicemod.mp3"></audio>
+
+
+            <button class="play-button aa">Pi'erre</button>
+        <audio class="music" src="yo-pierre,-you-wanna-come-out-here-(pierre-bourne-producer-tag)-made-with-Voicemod.mp3"></audio>
+
+
+            <button class="play-button aa">Wheezy</button>
+        <audio class="music" src="wheezy-outta-here-male-voice-tag_130bpm_F_minor.wav"></audio>
+
+        <script>
+        const buttons = document.querySelectorAll('.play-button');
+        const audios = document.querySelectorAll('.music');
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const currentAudio = audios[index];
+                
+                audios.forEach(audio => {
+                    if (audio !== currentAudio) {
+                        audio.pause();
+                        audio.currentTime = 0; 
+                    }
+                });
+
+
+                if (currentAudio.paused) {
+                    currentAudio.play();
+                } else {
+                    currentAudio.pause();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

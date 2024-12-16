@@ -1,0 +1,66 @@
+.METRO {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    font-style: italic;
+    height: 100px;
+    margin: 0;
+}
+
+.subheading {
+    font-size: 125%;
+    font-style: normal;
+    height: 100px;
+    padding: 0%;
+}
+
+.pic {
+    display: flex;
+    height: auto; 
+    border-radius: 25%;
+    float: right;
+    margin: auto;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 225%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.like-that {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.aa {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: blueviolet;
+}
+
+
+.Others {
+    padding-top: 75px;
+    font-size: 225%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Tags {
+    font-size: 225%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ body {
+    background-color: rgb(150, 114, 63);
+    font-family: Arial, Helvetica, sans-serif;
+ }
